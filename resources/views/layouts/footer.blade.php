@@ -1,17 +1,17 @@
-<footer>
+{{-- <footer>
 	<div class="container">
 		<header class="footerr">
 		    <nav class="navbar navbar-expand-lg navbar-light">
-		    <a class="navbar-brand" href="{{route('index')}}"><img src="{{url('front/images/logo.png')}}"></a>
+		    <a class="navbar-brand" href=""><img src="{{url('front/images/logo.png')}}"></a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-footer" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		      <span class="navbar-toggler-icon"></span>
 		    </button>
 		    <div class="collapse navbar-collapse" id="navbarSupportedContent-footer">
 		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-		        <li class="nav-item"><a class="nav-link active" href="{{route('index')}}">Home</a></li>
-                <li class="nav-item"><a class="nav-link active" href="{{route('about')}}">About Us </a></li>
-                <li class="nav-item"><a class="nav-link active" href="{{route('service-main')}}">Services</a></li>
-                <li class="nav-item"><a class="nav-link active" href="{{route('blog')}}">Blogs</a></li>   
+		        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="">About Us </a></li>
+                <li class="nav-item"><a class="nav-link active" href="">Services</a></li>
+                <li class="nav-item"><a class="nav-link active" href="">Blogs</a></li>   
 		      </ul>
 		    </div>
 			</nav>
@@ -26,7 +26,7 @@
 					<div class="footer-sec fisrt">
 						<h5>About Us</h5>
 						<p><p><strong>AOHWV</strong> Is The Identity Practice Of <span class="underline">RedLegg</span> with Its Own Identity, Its Own Brand & a Robust Team. Our goal is to build robust Strategy, Architecture, Security, And Everything That Falls In Between.</p>
-						<a class="btn btn-green" href="{{route('capability-statement')}}">Capability Statement</a>
+						<a class="btn btn-green" href="">Capability Statement</a>
 					</div>
 				</div>
 
@@ -46,7 +46,7 @@
 					<div class="footer-sec thrre">
 						<h5>Friday Challenge</h5>
 						<div class="take-quiz">
-							<a href="{{route('quiz')}}">Take A Quiz</a>
+							<a href="">Take A Quiz</a>
 						</div>
 					</div>
 
@@ -70,4 +70,4 @@
 		</div>
 	</div>
 
-</footer>
+</footer> --}}

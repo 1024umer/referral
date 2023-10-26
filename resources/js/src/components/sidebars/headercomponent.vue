@@ -5,7 +5,7 @@
                 <v-btn exact :to="{ name: 'auth.users.listing' }" :link="true" icon="mdi-vuetify"></v-btn>
             </template>
             <!-- <v-toolbar-title>Credit CRM</v-toolbar-title> -->
-            <v-btn>Categories <v-icon>mdi-menu-down</v-icon>
+            <!-- <v-btn>Categories <v-icon>mdi-menu-down</v-icon>
                 <v-menu max-width="200px" activator="parent" open-on-hover>
                     <v-list>
                         <v-list-item exact :to="{ name: 'auth.categories.listing' }" :link="true">
@@ -17,44 +17,7 @@
                     </v-list>
                 </v-menu>
             </v-btn>
-            <v-btn>Home <v-icon>mdi-menu-down</v-icon>
-                <v-menu max-width="200px" activator="parent" open-on-hover>
-                    <v-list>
-                        <v-list-item exact :to="{ name: 'auth.feedbacks.listing' }" :link="true">
-                            <v-list-item-title>Feedbacks</v-list-item-title>
-                        </v-list-item>
-                        <v-list-item exact :to="{ name: 'auth.faqs.listing' }" :link="true">
-                            <v-list-item-title>FAQs</v-list-item-title>
-                        </v-list-item>
-                        <v-list-item exact :to="{ name: 'auth.chooseus.listing' }" :link="true">
-                            <v-list-item-title>Why Choose Us</v-list-item-title>
-                        </v-list-item>
-                        <v-list-item exact :to="{ name: 'auth.additional.listing' }" :link="true">
-                            <v-list-item-title>Additional Services</v-list-item-title>
-                        </v-list-item>
-                    </v-list>
-                </v-menu>
-            </v-btn>
-            <v-btn :to="{ name: 'auth.blogs.listing' }" :link="true">Blogs</v-btn>
-            <v-btn :to="{ name: 'auth.services.listing' }" :link="true">Services</v-btn>
-            <v-btn :to="{ name: 'auth.events.listing' }" :link="true">Events</v-btn>
-            <v-btn :to="{ name: 'auth.cases.listing' }" :link="true">Case Studies</v-btn>
-            <v-btn :to="{ name: 'auth.contacts.listing' }" :link="true">Contacts</v-btn>
-            <v-btn>Quiz <v-icon>mdi-menu-down</v-icon>
-                <v-menu max-width="200px" activator="parent" open-on-hover>
-                    <v-list>
-                        <v-list-item exact :to="{ name: 'auth.surveys.listing' }" :link="true">
-                            <v-list-item-title>Survey</v-list-item-title>
-                        </v-list-item>
-                        <v-list-item exact :to="{ name: 'auth.surveyquestions.listing' }" :link="true">
-                            <v-list-item-title>Questions</v-list-item-title>
-                        </v-list-item>
-                        <v-list-item exact :to="{ name: 'auth.surveyanswers.listing' }" :link="true">
-                            <v-list-item-title>Answers</v-list-item-title>
-                        </v-list-item>
-                    </v-list>
-                </v-menu>
-            </v-btn>
+             -->
             <v-spacer></v-spacer>
 
             <v-menu min-width="200px" rounded>

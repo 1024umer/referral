@@ -20,8 +20,12 @@ class User extends Authenticatable
     protected $appends = ['image_url'];
     protected $with = ['role'];
     protected $fillable = [
-        'name',
+        'first_name',
+        'last_name',
         'email',
+        'role_id',
+        'state',
+        'dob',
         'password',
     ];
 

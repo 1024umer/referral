@@ -84,11 +84,11 @@ div#navbarCollapse {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #5DF000;
+    background-color: #F4CE14;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #5DF000;
+    background-color: #F4CE14;
 }
 
 header nav.navbar.navbar-expand-lg.navbar-light {

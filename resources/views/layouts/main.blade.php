@@ -13,7 +13,11 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @include('layouts.css')
     @stack('css')
-
+<style>
+    body{
+        background: #45474B;
+    }
+</style>
 </head>
 
 <body>

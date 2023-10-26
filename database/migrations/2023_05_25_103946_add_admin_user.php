@@ -14,8 +14,10 @@ return new class extends Migration
     public function up(): void
     {
         User::create([
-            'email' => 'admin@aoh.com',
-            'name' => 'admin',
+            'first_name' => 'admin',
+            'last_name' => 'admin',
+            'email' => 'admin@admin.com',
+            'role_id' => 1,
             'password' => Hash::make('12345678'),
         ]);
     }
@@ -25,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        User::where('email' ,'admin@credit.com')->delete();
+        User::where('email' ,'admin@admin.com')->delete();
     }
 };
