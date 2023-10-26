@@ -1,0 +1,43 @@
+.vertical-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+.vertical-scroll > div{
+    min-width: 300px;
+    max-width: 300px;
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+.highlight-blink{
+    -webkit-animation: paymentblinking 1s infinite;  /* Safari 4+ */
+    -moz-animation: paymentblinking 1s infinite;  /* Fx 5+ */
+    -o-animation: paymentblinking 1s infinite;  /* Opera 12+ */
+    animation: paymentblinking 1s infinite;  /* IE 10+, Fx 29+ */
+}
+.ckeditor-render-content img {
+    max-width: 100%;
+}
+@-webkit-keyframes paymentblinking {
+    0%, 49% {
+      background-color: rgb(188, 255, 150);
+    }
+    50%, 100% {
+        background-color: rgba(188, 255, 150, 0.705);
+    }
+  }
+  .green-background {
+    max-width: fit-content;
+    background-color: #dff7e9 ;
+    color: #28c76f ;
+    padding: 2px 13px;
+    border-radius: 5px;
+}
+  .red-background {
+    max-width: fit-content;
+    background-color: #fce5e6 ;
+    color: #ea5455;
+    padding: 2px 13px;
+    border-radius: 5px;
+}

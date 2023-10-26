@@ -1,0 +1,1123 @@
+@media only screen and (min-width: 1366px) and (max-width: 1920px){}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1365px){}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .text-wide h1 {
+    font-size: 95px;
+    line-height: 112px;
+}
+
+.text-wide h1 span {
+    margin-left: 210px;
+}
+
+.footer-sec-text h6 br {
+    display: none;
+}
+
+.footer-sec-text h6 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+section.why-choose-us {
+    height: 813px;
+}
+
+section.additional-services {
+    height: 1283px;
+    top: -128px;
+    padding: 170px 0 0;
+}
+
+section.technology-partners {
+    padding: 90px 0 140px;
+}
+
+.about-triangle {
+    padding: 50px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+body, html{
+    overflow-x: hidden !important;
+}
+
+
+.text-wide h1 span {
+    display: block;
+    margin-left: 130px;
+}
+
+.text-wide h1 {
+    font-size: 60px;
+    line-height: 80px;
+}
+
+.footer-sec-text {
+    justify-content: left;
+}
+
+.footer-sec-text.bdr {
+    border-right: unset;
+    margin: 0 0 18px;
+}
+
+section.service-we-offer {
+    padding: 40px 0 20px;
+}
+
+.service-card {
+    margin: 0 0 30px;
+}
+
+.choose-us-text h2 br {
+    display: none;
+}
+
+.choose-us-text h2 {
+    font-size: 38px;
+    line-height: 45px;
+}
+
+.choose-us-text p {
+    font-size: 16px;
+    line-height: 26px;
+    width: 100%;
+}
+
+.choose-us-card p {
+    width: 100%;
+}
+
+.choose-us-card {
+    height: 100%;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+section.additional-services {
+    height: 1343px;
+    top: -130px;
+}
+
+section.why-choose-us {
+    padding: 100px 0 110px;
+    height: 763px;
+}
+
+.content-blk {
+    margin: 0 0 40px;
+}
+
+.content-blk-img.line::after {
+    height: 240px;
+}
+
+.content-blk h4 {
+    margin-bottom: 8px;
+}
+
+section.our-blogs {
+    margin: -100px 0 0;
+}
+
+section.technology-partners {
+    margin: 30px 0 0px;
+    padding-bottom: 150px;
+}
+
+.health-box h1 {
+    font-size: 44px;
+    line-height: 50px;
+}
+
+.health-box h1 br {
+    display: none;
+}
+
+section.faq {
+    margin: 50px 0 0;
+}
+
+.about-triangle {
+    padding: 45px;
+}
+
+section.about-us-content {
+    padding: 0 0 0;
+}
+
+section.dark-cards .service-card {
+    padding: 30px;
+}
+
+section.dark-cards ul li {
+    font-size: 16px;
+    padding: 0 0 13px;
+    line-height: 24.48px;
+    width: 100%;
+}
+
+section.dark-cards .col-md-8 {
+    width: 100%;
+}
+
+section.dark-cards p {
+    text-align: center;
+}
+
+.blogg .bannerr-text p {
+    width: 80%;
+}
+
+.normal-links {
+    flex-direction: column;
+}
+
+.normal-links a {
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+.blogs-slides {
+    margin: 0;
+}
+
+.blogs-btn {
+    flex-direction: column;
+}
+
+.blogs-content h5 br {
+    display: none;
+}
+
+.blogs-slides-bottom li.bdr {
+    padding-right: 10px;
+}
+
+section.latest-blogs {
+    padding: 70px 0 70px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 520px) and (max-width: 767px){
+body, html{
+    overflow-x: hidden !important;
+}
+
+.text-wide h1 {
+    font-size: 45px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.text-wide h1 span {
+    margin-left: 100px;
+}
+
+.banner-footer-blks {
+    width: 100%;
+    padding: 25px;
+}
+
+.footer-sec-text h6 br {
+    display: none;
+}
+
+.footer-sec-text.bdr {
+    border-right: unset;
+}
+
+.footer-sec-text {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 15px;
+}
+
+section.service-we-offer {
+    padding: 0 0;
+}
+
+.service-title h4 {
+    font-size: 35px;
+}
+
+.service-title h6 {
+    font-size: 18px;
+}
+
+.service-title {
+    margin: 0 0 30px;
+}
+
+.service-card {
+    margin: 0 0 20px;
+}
+
+section.why-choose-us {
+    background-size: cover;
+    padding: 50px 0 60px;
+    margin: 30px 0 0;
+    height: 1250px;
+}
+
+.choose-us-card {
+    margin: 0 0 30px;
+}
+
+.choose-us-text h2 br {
+    display: none;
+}
+
+.choose-us-text h2 {
+    font-size: 35px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.choose-us-text h4 {
+    font-size: 18px;
+}
+
+.choose-us-text p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+section.additional-services {
+    background-size: cover;
+    position: relative;
+    top: -140px;
+    padding: 100px 0 0px;
+    background-position: inherit;
+    height: 1560px;
+}
+
+.content-blk {
+    flex-direction: column;
+    margin: 0 0 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.content-blk-img {
+    margin: 0 0 15px;
+}
+
+.content-blk-img.line::after {
+    content: unset;
+}
+
+.content-blk h4 {
+    margin-bottom: 0;
+}
+
+section.technology-partners {
+    margin: 30px 0 0;
+}
+
+.tech-partners-text h4 {
+    font-size: 35px;
+    line-height: 50px;
+}
+
+.tech-partners-text h6 {
+    font-size: 18px;
+}
+
+section.technology-partners {
+    padding: 60px 0 170px;
+    margin: 20px 0 0;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.tech-partners-text h4 {
+    font-size: 35px;
+    line-height: 50px;
+}
+
+section.technology-partners {
+    padding: 60px 0 170px;
+    margin: 20px 0 0;
+    overflow: hidden;
+    background-size: cover;
+}
+
+section.testi {
+    padding: 0 0 0;
+}
+
+.health-box h1 br {
+    display: none;
+}
+
+.health-box h1 {
+    font-size: 35px;
+    line-height: 50px;
+}
+
+.health-box {
+    height: 100%;
+    padding: 35px 0;
+}
+
+section.health-check {
+    margin: 60px 0 0;
+}
+
+section.faq {
+    margin: 0 0 0;
+    padding: 130px 0 110px;
+}
+
+.tech-partners-text p {
+    width: 100%;
+}
+
+footer {
+    padding: 80px 0 0;
+}
+
+a.navbar-brand img {
+    width: 95px;
+}
+
+.bannerr-text {
+    padding: 74px 0 0;
+}
+
+.bannerr-text h3 {
+    font-size: 30px;
+}
+
+.bannerr-text h4 {
+    font-size: 18px !important;
+    margin: 0 0 6px;
+}
+
+.about-triangle {
+    padding: 35px 25px;
+    top: -100px;
+}
+
+section.about-us-content {
+    padding: 0 0 0;
+}
+
+.about-triangle p {
+    font-size: 17px;
+    line-height: 28px;
+}
+
+section.small-banner .bannerr-text h2 {
+    font-size: 30px !important;
+    line-height: 35px !important;
+}
+
+section.small-banner .bannerr-text h2 br{
+    display: none !important;
+}
+
+section.dark-cards ul {
+    padding: 0;
+}
+
+section.small-banner {
+    height: 300px !important;
+}
+
+section.dark-cards ul li {
+    font-size: 16px;
+    padding: 0 0 12px;
+    width: 100%;
+}
+
+.service-card {
+    padding: 25px 40px !important;
+}
+
+section.dark-cards p {
+    text-align: center;
+}
+
+.blogg .bannerr-text p {
+    font-size: 16px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.normal-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.normal-links a {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto 12px;
+}
+
+section.latest-blogs {
+    padding: 30px 0 30px;
+}
+
+.blogs-slides {
+    margin: 0 10px 25px;
+}
+
+.latest-blogs .row.martop {
+    margin-top: 0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 519px){
+
+body, html{
+    overflow-x: hidden !important;
+}
+
+.text-wide h1 {
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.text-wide h1 span {
+    margin-left: 66px;
+}
+
+.text-left-align {
+    margin: 0 0 0;
+}
+
+.text-left-align p {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+a.navbar-brand img {
+    width: 77px;
+}
+
+header a.bn-cntct {
+    margin: 10px 0 0;
+}
+
+header {
+    margin: 0 0 -2px;
+}
+
+.footer-sec-text.bdr {
+    border-right: unset;
+    margin: 0 0 30px;
+}
+
+.footer-sec-text br {
+    display: none;
+}
+
+.banner-footer-blks {
+    padding: 18px 20px;
+    width: 100%;
+}
+
+section.service-we-offer {
+    padding: 30px 0 0;
+}
+
+.service-title h6 {
+    font-size: 16px;
+}
+
+.service-title h4 {
+    font-size: 30px;
+}
+
+.service-title {
+    margin: 0 0 30px;
+}
+
+.service-card h4 {
+    font-size: 20px;
+    width: 100%;
+    margin: 0 auto 12px;
+}
+
+.service-card h4 br{
+    display: none;
+}
+
+.service-card {
+    margin: 0 0 30px;
+    padding: 30px 20px 30px;
+}
+
+.choose-us-text h2 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.choose-us-text {
+    text-align: center;
+}
+
+.choose-us-text h2 br {
+    display: none;
+}
+
+.choose-us-text p {
+    font-size: 14px;
+    line-height: 23px;
+    width: 100% !important;
+}
+
+section.why-choose-us {
+    background-size: cover;
+    padding: 30px 0 30px;
+    margin: 30px 0 0px;
+    height: 100%;
+}
+
+.choose-us-card {
+    margin: 0 0 30px;
+}
+
+section.additional-services {
+    background-size: cover;
+    position: relative;
+    top: -20px;
+    padding: 40px 0 0px;
+    background-position: inherit;
+    height: 1300px;
+}
+
+.add-srv {
+    text-align: center;
+}
+
+.choose-us-text h4 {
+    font-size: 16px;
+}
+
+.content-blk {
+    flex-direction: column;
+    margin: 0 0 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.add-srv-content {
+    width: 100%;
+    padding: 60px 0 0;
+}
+
+.content-blk-img {
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.content-blk-img.line::after {
+    content: unset;
+}
+
+.content-blk p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.content-blk h4 {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+section.our-blogs {
+    margin: 0;
+}
+
+.blogs-content {
+    padding: 20px 10px;
+}
+
+.blogs-content h5 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.blogs-content h5 br {
+    display: none;
+}
+
+.blogs-content {
+    padding: 20px 10px 0;
+}
+
+.health-box {
+    height: 100%;
+    padding: 20px 0;
+}
+
+.health-box h1 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.health-box h1 br {
+    display: none;
+}
+
+section.health-check {
+    margin: 30px 0 0;
+}
+
+section.faq {
+    margin: 0px 0 0;
+    padding: 110px 0 70px;
+}
+
+section.technology-partners {
+    padding: 60px 0 170px;
+    margin: 20px 0 0;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.tech-partners-text h6 {
+    font-size: 16px;
+}
+
+.tech-partners-text h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.tech-partners-text h4 br {
+    display: none;
+}
+
+.tech-partners-text {
+    text-align: center;
+}
+
+.tech-partners-text p {
+    font-size: 14px;
+    line-height: 23px;
+    width: 100%;
+}
+
+section.technology-partners .container-fluid {
+    padding: 0 10px;
+}
+
+section.faq .container-fluid {
+    padding: 0 10px;
+}
+
+section.faq .accordion-item button {
+    font-size: 14px;
+}
+
+section.faq .accordion-body h4 {
+    font-size: 15px;
+    margin: 0 0 10px;
+    line-height: 24px;
+}
+
+section.faq{
+    overflow: hidden;
+}
+
+section.testi {
+    padding: 0;
+}
+
+header nav.navbar.navbar-expand-lg.navbar-light {
+    padding: 0 0 0;
+}
+
+footer:after {
+    position: absolute;
+    background-image: unset;
+    z-index: -1;
+}
+
+footer {
+    padding: 10px 0 0;
+    margin: 1px 0 0;
+}
+
+header.footerr {
+    padding: 0 0 0;
+}
+
+.footer-sec p {
+    width: 100%;
+}
+
+.footer-sec ul {
+    margin: 0 0 0;
+}
+
+.copy-right p {
+    font-size: 14px;
+}
+
+.copy-right {
+    padding: 22px 0;
+}
+
+.social-icons ul {
+    justify-content: center;
+}
+
+section.small-banner {
+    height: 100% !important;
+    padding: 35px 0 !important;
+}
+
+.bannerr-text {
+    padding: 0 0 0;
+}
+
+.about-triangle p {
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.about-triangle {
+    padding: 20px;
+    top: -20px;
+}
+
+.bannerr-text h3 {
+    font-size: 20px;
+}
+
+.bannerr-text h4 {
+    font-size: 14px !important;
+    margin: 0 0 6px;
+}
+
+section.about-us-content {
+    padding: 0 0 30px;
+}
+
+section.about-health-box {
+    padding: 0 0 50px;
+}
+
+section.small-banner .bannerr-text h2 br {
+    display: none !important;
+}
+
+section.small-banner .bannerr-text h2 {
+    font-size: 20px !important;
+    line-height: 25px !important;
+}
+
+section.dark-cards .service-card {
+    padding: 15px;
+}
+
+section.dark-cards p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22.24px;
+}
+
+section.dark-cards ul li {
+    font-size: 14px;
+    padding: 0 0 13px;
+    line-height: 22.24px;
+    width: 100%;
+}
+
+section.dark-cards {
+    padding: 20px 0 20px;
+
+}
+
+.blogg .bannerr-text p {
+    font-size: 14px;
+    line-height: 23px;
+    width: 100%;
+    margin: 14px auto 0;
+}
+
+.search-barr .input-group input {
+    padding: 0 0 0 40px;
+    font-size: 9px;
+}
+
+.search-barr .input-group::after {
+    left: 16px;
+    top: 8px;
+}
+
+.search-barr button {
+    font-size: 14px;
+    padding: 0 25px;
+}
+
+.search-barr .input-group {
+    height: 40px;
+}
+
+.normal-links {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.normal-links a {
+    margin: 0 0 15px;
+}
+
+section.latest-blogs {
+    padding: 20px 0 20px;
+}
+
+.blogs-slides {
+    margin: 0 10px 20px;
+}
+
+.latest-blogs .row.martop {
+    margin-top: 0;
+}
+
+.blogs-slides-bottom li.bdr {
+    padding-right: 40px;
+}
+
+.reach-text h2 {
+    font-size: 20px;
+}
+
+.reach-text h4 {
+    font-size: 14px;
+}
+
+section.reach-us {
+    padding: 20px 0 50px;
+}
+
+.reach-text a {
+    font-size: 16px;
+}
+
+.reach-text p {
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+}
+
+.lets-talk {
+    padding: 25px;
+    margin: 20px 0 0;
+}
+
+.lets-talk {
+    padding: 25px;
+    margin: 20px 0 0;
+}
+
+.lets-talk h4 {
+    font-size: 25px;
+    margin: 0 0 30px;
+}
+
+.lets-talk input {
+    margin: 0 0 25px;
+    padding: 0 0 8px;
+    font-size: 12px;
+    outline: none;
+}
+
+section.small-banner.service-page-two .bannerr-text h5 {
+    font-size: 14px;
+}
+
+section.small-banner.service-page-two p {
+    font-size: 14px;
+    line-height: 23px;
+    width: 100%;
+    margin: 14px auto 0;
+}
+
+section.small-banner.service-page-two h4 {
+    font-size: 20px !important;
+    line-height: 25px !important;
+}
+
+section.small-banner.service-page-two h4 br{
+    display: none;
+}
+
+.scope-content {
+    top: -20px;
+    padding: 25px 25px;
+}
+
+.scope-content li {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 0 40px;
+    width: 100%;
+}
+
+.scope-content li::after {
+    left: -17px;
+}
+
+section.servive-dark-bg {
+    margin: -10px 0 0;
+    height: 100%;
+    padding: 70px 0 0;
+    background-size: cover;
+}
+
+.srv-dark-title h4 br{
+    display: none;
+}
+
+.srv-dark-title h4 {
+    line-height: 28px;
+}
+}
