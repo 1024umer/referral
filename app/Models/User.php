@@ -17,7 +17,7 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $appends = ['image_url'];
+    protected $appends = ['image_url','full_name','referral_url'];
     protected $with = ['role'];
     protected $fillable = [
         'first_name',
@@ -27,6 +27,8 @@ class User extends Authenticatable
         'state',
         'dob',
         'password',
+        'referral_id',
+        'balance',
     ];
 
     /**
@@ -64,7 +66,15 @@ class User extends Authenticatable
         }
         return 'N/A';
     }
+    public function getFullNameAttribute(){
+        return strtoupper($this->first_name . ' ' . $this->last_name);
+    }
     public function role(){
         return $this->belongsTo(Role::class);
+    }
+    public function getReferralUrlAttribute(){
+        $query='?_agent_id=insurance&utm_source=';
+        $link = env('APP_URL'). $query .'/'.$this->first_name . '/'.$this->id ;
+        return $link;
     }
 }

@@ -54,4 +54,40 @@ class LoginController extends Controller
         $request->session()->regenerateToken();
         return redirect()->route('login');
     }
+
+
+    public function referral(Request $request){
+        $url = $request->fullUrl();
+        $id = null;
+        if (preg_match('/%2F(\d+)$/', $url, $matches)) {
+            $id = $matches[1];
+        }
+        if($id == null || !$id){
+            return redirect()->route('login');
+        }
+        return view('dashboard.auth.login')->with(compact('id'));
+    }
+    public function referralRegister(RegisterRequest $request){
+        $referrer = User::where('id',$request->referral_id)->first();
+        if(!$referrer){
+            return back()->with('error','Sorry the refferal user does not exsist');
+        }else{
+            $user = User::create([
+                'first_name'=> $request->first_name,
+                'last_name' => $request->last_name,
+                'email'=> $request->email,
+                'password'=>Hash::make($request->password),
+                'state'=> $request->state,
+                'dob'=> $request->dob,
+                'role_id'=>2,
+                'referral_id'=> $request->referral_id,
+            ]);
+            $referrer->balance += 50;
+            $referrer->save();
+            if($request->profile_image){
+                $image = $this->file->create([$request->profile_image],'users', $user->id);
+            }
+            return back()->with('success','Your Account has been created please login!');
+        }
+    }
 }

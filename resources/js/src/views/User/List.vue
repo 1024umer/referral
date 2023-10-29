@@ -80,10 +80,20 @@ export default {
                     title: "Name",
                     align: "start",
                     sortable: true,
-                    key: "name",
+                    key: "full_name",
                 },
-                
-                
+                {
+                    title: "State",
+                    align: "start",
+                    sortable: true,
+                    key: "state",
+                },
+                {
+                    title: "Date of Birth",
+                    align: "start",
+                    sortable: true,
+                    key: "dob",
+                },
                 {
                     title: "Actions",
                     sortable: false,

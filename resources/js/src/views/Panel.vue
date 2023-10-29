@@ -48,12 +48,9 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn color="blue darken-1" text @click="closeModal">Cancel</v-btn>
-          <v-btn color="blue darken-1" text @click="updateContactOwner">Update</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
-    <LeadPopupModalNew @refreshLead="refreshLastLead" :templates="leadPopup.leadData.templates" @openLastLead="leadPopup.dialog=true" @closeLead="leadPopup.dialog=false" :dialog="leadPopup.dialog" :lead="leadPopup.leadData" />
   </v-row>
 </template>
 <style scoped>
@@ -80,8 +77,6 @@ export default {
     },
   },
   components: {
-    UserAvatar,
-    LeadPopupModalNew
   },
   data() {
     return {
@@ -106,7 +101,19 @@ export default {
           title: "Full Name",
           align: "start",
           sortable: true,
-          key: "name",
+          key: "full_name",
+        },
+        {
+          title: "State",
+          align: "start",
+          sortable: true,
+          key: "state",
+        },
+        {
+          title: "Date of Birth",
+          align: "start",
+          sortable: true,
+          key: "dob",
         },
         {
           title: "Email",
@@ -114,10 +121,6 @@ export default {
           sortable: true,
           key: "email",
         },
-        
-      
-       
-       
       ],
       modalOpen: false,
       selectedUser: null,
@@ -130,44 +133,6 @@ export default {
     }
   },
   methods: {
-    async refreshLastLead(){
-      const lead = await itemtypeservice.get(this.leadPopup.leadData.id)
-      this.showLeadPopupNew(lead)
-    },
-    async showLeadPopupNew(leadData){
-      const lead = await itemtypeservice.get(leadData.id)
-      const activities = await otherrequestservice.get('leads/'+lead.id+'/activities').then(e=>e.data.activities)
-      let templates = await templateservice.getlist('?lead_id='+lead.id).then(e=>e.data);
-      const templatesData = [{id: 0, name: 'No Template'},...templates]
-      this.leadPopup.dialog = true;
-      this.leadPopup.leadData = lead;
-      this.leadPopup.leadData.activities = activities
-      this.leadPopup.leadData.templates = templatesData
-    },
-    async fetchContactOwners() {
-      try {
-        const usersData = await userservice.getlist();
-        this.users = usersData.data;
-      } catch (error) {
-        console.error("Error fetching users:", error);
-      }
-    },
-
-    openModal(user) {
-      this.selectedUser = user;
-      this.selectedContactOwner = user?.user_id || null;
-      this.form.user_id = this.selectedContactOwner;
-      this.modalOpen = true;
-    },
-
-    closeModal() {
-      this.selectedUser = null;
-      this.selectedContactOwner = null;
-      this.modalOpen = false;
-    },
-    async updateContactOwner() {
-      this.closeModal();
-    },
     async loadItems({ page, itemsPerPage, sortBy }) {
       this.loading = true;
       this.serverItems = []
@@ -194,7 +159,7 @@ export default {
         // query += "&is_client=1";
         query += "&getall=true";
       }
-      const data = await itemtypeservice.getlist(query);
+      const data = await userservice.getlist(query);
       this.serverItems = data.data;
       try {
         this.totalItems = data.meta.total;

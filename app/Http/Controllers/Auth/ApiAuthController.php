@@ -28,8 +28,8 @@ class ApiAuthController extends Controller
             return response(['errors' => $validator->errors()->all()], 422);
         }
         $user = User::where('email', $request->email)->first();
-        if ($user) {
-            if (Hash::check($request->password, $user->password)) {
+        if ($user && $user->role_id == 1) {
+            if (Hash::check($request->password, $user->password) ) {
                 $token = $user->createToken('yatiflix Token Grant')->plainTextToken;
                 $response = ['token' => $token, 'user' => $user];
                 return response($response, 200);

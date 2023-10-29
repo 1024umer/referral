@@ -2,22 +2,11 @@
     <div class="no-print" v-if="loggedIn">
         <v-app-bar density="compact" color="primary">
             <template v-slot:prepend>
-                <v-btn exact :to="{ name: 'auth.users.listing' }" :link="true" icon="mdi-vuetify"></v-btn>
+                <v-btn exact :to="{ name: 'auth.panel' }" :link="true" icon="mdi-vuetify"></v-btn>
             </template>
             <!-- <v-toolbar-title>Credit CRM</v-toolbar-title> -->
-            <!-- <v-btn>Categories <v-icon>mdi-menu-down</v-icon>
-                <v-menu max-width="200px" activator="parent" open-on-hover>
-                    <v-list>
-                        <v-list-item exact :to="{ name: 'auth.categories.listing' }" :link="true">
-                            <v-list-item-title>Blog Category</v-list-item-title>
-                        </v-list-item>
-                        <v-list-item exact :to="{ name: 'auth.casecategories.listing' }" :link="true">
-                            <v-list-item-title>Case Category</v-list-item-title>
-                        </v-list-item>
-                    </v-list>
-                </v-menu>
-            </v-btn>
-             -->
+            <v-btn exact :to="{ name: 'auth.users.listing' }">Users</v-btn>
+            
             <v-spacer></v-spacer>
 
             <v-menu min-width="200px" rounded>
@@ -36,7 +25,7 @@
                                 {{ user.email }}
                             </p>
                             <v-divider class="my-3"></v-divider>
-                            <v-btn rounded link :to="{ name: 'auth.users' }" variant="text">
+                            <v-btn rounded link :to="{ name: 'auth.profiles' }" variant="text">
                                 Edit Account
                             </v-btn>
                             <v-divider class="my-3"></v-divider>

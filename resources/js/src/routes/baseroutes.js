@@ -6,6 +6,11 @@ export default [
         component: () => import('@/views/Panel.vue'),
     },
     {
+        path: '/profiles/',
+        name: 'auth.profiles',
+        component: () => import('../views/Profile/Form.vue'),
+    },
+    {
         path: '/users/',
         name: 'auth.users',
         component: () => import('../views/User/Main.vue'),

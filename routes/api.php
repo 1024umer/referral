@@ -7,6 +7,7 @@ use App\Http\Controllers\Auth\ApiAuthController;
 use App\Http\Controllers\Api\{
     UserController,
     ProfileController,
+    RoleController
 };
 
 /*
@@ -26,6 +27,8 @@ Route::group(['middleware' => ['json.response', 'auth:sanctum']], function () {
     Route::post('/logout', [ApiAuthController::class, 'logout']);
     Route::put('/updateprofile', [ApiAuthController::class, 'updateprofile']);
     Route::apiResource('users', UserController::class);
+    Route::apiResource('roles', RoleController::class);
+    Route::apiResource('profiles', ProfileController::class);
 });
 Route::middleware('auth:sanctum')->get('/me', function (Request $request) {
     User::where('id', $request->user()->id)

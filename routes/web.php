@@ -14,9 +14,12 @@ use App\Http\Controllers\Auth\LoginController;
 |
 */
 
-Route::get('/', [LoginController::class, 'index'])->name('login');
+Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/register', [LoginController::class, 'register'])->name('register');
 Route::post('/authenticate', [LoginController::class, 'authenticate'])->name('authenticate');
+
+Route::get('/', [LoginController::class, 'referral'])->name('referral');
+Route::post('/register/referral', [LoginController::class, 'referralRegister'])->name('referral.register');
 
 Route::middleware(['auth'])->prefix('dashboard')->name('user.')->group(function () {
     Route::get('/',[IndexController::class,'index'])->name('dashboard');
