@@ -48,7 +48,7 @@ class ApiAuthController extends Controller
         return response($response, 200);
     }
 
-    public function updateprofile(ProfileRequest $request){
+    public function updateprofile(Request $request){
         $arr = [
             'name' => $request->name,
             'email' => $request->email,
