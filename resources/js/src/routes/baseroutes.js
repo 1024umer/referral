@@ -11,6 +11,11 @@ export default [
         component: () => import('../views/Profile/Form.vue'),
     },
     {
+        path: '/referrals/',
+        name: 'auth.referrals.listing',
+        component: () => import('../views/Referral/List.vue'),
+    },
+    {
         path: '/users/',
         name: 'auth.users',
         component: () => import('../views/User/Main.vue'),

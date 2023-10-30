@@ -49,7 +49,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
+    public function referredUsers()
+    {
+        return $this->hasMany(User::class, 'referral_id','id');
+    }
+    public function referrer()
+    {
+        return $this->belongsTo(User::class, 'referral_id', 'id');
+    }        
     public function image(){
         return $this->morphOne(File::class,'fileable');
     }

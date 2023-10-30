@@ -6,6 +6,7 @@
             </template>
             <!-- <v-toolbar-title>Credit CRM</v-toolbar-title> -->
             <v-btn exact :to="{ name: 'auth.users.listing' }">Users</v-btn>
+            <v-btn exact :to="{ name: 'auth.referrals.listing' }">Referrals</v-btn>
             
             <v-spacer></v-spacer>
 

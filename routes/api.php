@@ -7,7 +7,8 @@ use App\Http\Controllers\Auth\ApiAuthController;
 use App\Http\Controllers\Api\{
     UserController,
     ProfileController,
-    RoleController
+    RoleController,
+    ReferralController,
 };
 
 /*
@@ -29,6 +30,7 @@ Route::group(['middleware' => ['json.response', 'auth:sanctum']], function () {
     Route::apiResource('users', UserController::class);
     Route::apiResource('roles', RoleController::class);
     Route::apiResource('profiles', ProfileController::class);
+    Route::get('/referrals',[ReferralController::class,'index']);
 });
 Route::middleware('auth:sanctum')->get('/me', function (Request $request) {
     User::where('id', $request->user()->id)
