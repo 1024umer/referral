@@ -13,9 +13,9 @@ class IndexController extends Controller
         $user = User::where('id',auth()->user()->id)->with('image')->first();
         $query='/?_agent_id=insurance&utm_source=';
         if($user->state == 'Florida' || $user->state == 'Texas' || $user->state == 'Illinios'){
-            $link2 =  env('APP_URL'). '/?_agent_id=insurace' .'/' ;
+            $link2 = 'https://www.healthsherpa.com/?_agent_id=insurace/' ;
         }else{
-            $link2 =  env('APP_URL'). '/?_agent_id=Wecare' .'/' ;
+            $link2 = 'https://www.healthsherpa.com/?_agent_id=Wecare/' ;
         }
         if($user->referral_id != null){
             $parent = User::where('id',$user->referral_id)->first();
