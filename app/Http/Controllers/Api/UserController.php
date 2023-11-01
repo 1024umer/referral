@@ -22,7 +22,7 @@ class UserController extends Controller
     public function index()
     {
         // Gate::authorize('viewAny',Merchant::class);
-        $query = $this->listRep->listFilteredQuery(['first_name','last_name' ,'email','state','dob'])
+        $query = $this->listRep->listFilteredQuery(['first_name','last_name' ,'email','state','dob','is_active'])
         ->select('users.*')->where('id','!=',auth()->user()->id);
         if(isset($_GET['role_id'])){
             $query = $query->where('role_id',$_GET['role_id']);
@@ -36,7 +36,7 @@ class UserController extends Controller
     }
     public function store(UserRequest $request)
     {
-        $attributes = $request->only('first_name','last_name' ,'email','state','dob','role_id','balance','referral_id');
+        $attributes = $request->only('first_name','last_name' ,'email','state','dob','role_id','balance','referral_id','is_active');
         $attributes['password'] = Hash::make($request->password);
         $user = User::create($attributes);
         $user->save();
@@ -51,7 +51,7 @@ class UserController extends Controller
     }
     public function update(Request $request, User $user)
     {
-        $attributes = $request->only('first_name','last_name' ,'email','state','dob','role_id');
+        $attributes = $request->only('first_name','last_name' ,'email','state','dob','role_id','is_active');
         if($request->balance && $request->balance != ''){
             $attributes['balance'] = $request->balance;
         }else{

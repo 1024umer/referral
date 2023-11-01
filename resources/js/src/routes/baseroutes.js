@@ -12,8 +12,20 @@ export default [
     },
     {
         path: '/referrals/',
-        name: 'auth.referrals.listing',
-        component: () => import('../views/Referral/List.vue'),
+        name: 'auth.referrals',
+        component: () => import('../views/Referral/Main.vue'),
+        children: [
+            {
+                path: '',
+                component: () => import('../views/Referral/List.vue'),
+                name: 'auth.referrals.listing'
+            },
+            {
+                path: 'show/:id',
+                component: () => import('@/views/Referral/Show.vue'),
+                name: 'auth.referrals.show'
+            }
+        ],
     },
     {
         path: '/users/',

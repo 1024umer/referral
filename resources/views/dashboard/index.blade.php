@@ -40,9 +40,22 @@
                         @if (isset($parent))
                             <p><strong>Reffered By: </strong>{{$parent->full_name}}</p>
                         @endif
-                        <p><strong>Current Balance:</strong>${{$user->balance}}</p>
+                        <p><strong>Current Commision: </strong>${{$user->balance}}</p>
                         <p><strong>Referral Link:</strong> <a id="referralLink" href="javascript:void(0)">{{$link}}</a></p>
                         <button class="btn btn-outline-warning" id="copyLinkBtn">Copy Link</button>
+                        <div class="mt-2">
+                            <p><strong>Health Enrollment: </strong> <a href="javascript:void(0)">{{$link2}} </a></p>
+                            <span class="mb-5" style="">{!! $user->is_active == 1 ? '<strong>Enrolled:</strong> <i class="fa-solid fa-check fa-2xl" style="color: #58d336;"></i>' : '<strong>Enrolled:</strong><i class="fa-solid fa-xmark fa-2xl" style="color: #e21227;"></i>' !!}</span>
+                        </div>
+                        <div class="form-group mt-5">
+                            <label for="" class="form-label"><strong>My Referrals</strong></label>
+                            <select name="" class="form-select" id="">
+                                <option selected>Click to See If there is any referral</option>
+                                @foreach ($referrals as $item)
+                                <option value="">{{$item->full_name}}</option>
+                                @endforeach
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -25,6 +25,12 @@
                 <template v-slot:item.role_id="{ item }">
                     {{ item.selectable.role.title }}
                 </template>
+                <template v-slot:item.is_active="{ item }">
+                    <div
+                        :class="{ 'green-background': item.selectable.is_active === 1, 'red-background': item.selectable.is_active !== 1 }">
+                        {{ item.selectable.is_active === 1 ? 'Yes' : 'No' }}
+                    </div>
+                </template>
                 <template v-slot:item.actions="{ item }">
                     <v-btn link :to="{ name: 'auth.users.edit', params: { id: item.selectable.id } }" color="info" density="comfortable" size="small"
                         icon="mdi-pencil-plus"></v-btn>
@@ -93,6 +99,12 @@ export default {
                     align: "start",
                     sortable: true,
                     key: "dob",
+                },
+                {
+                    title: "Enrolled",
+                    align: "start",
+                    sortable: true,
+                    key: "is_active",
                 },
                 {
                     title: "Actions",

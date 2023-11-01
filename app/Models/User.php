@@ -29,6 +29,7 @@ class User extends Authenticatable
         'password',
         'referral_id',
         'balance',
+        'is_active',
     ];
 
     /**

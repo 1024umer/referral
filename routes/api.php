@@ -31,6 +31,7 @@ Route::group(['middleware' => ['json.response', 'auth:sanctum']], function () {
     Route::apiResource('roles', RoleController::class);
     Route::apiResource('profiles', ProfileController::class);
     Route::get('/referrals',[ReferralController::class,'index']);
+    Route::get('/referrals-show/{id}',[ReferralController::class,'show']);
 });
 Route::middleware('auth:sanctum')->get('/me', function (Request $request) {
     User::where('id', $request->user()->id)

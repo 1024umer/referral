@@ -26,5 +26,17 @@ class ReferralController extends Controller
     
         return UserResource::collection($referrers);
     }
+    public function show($id, Request $request){
+        $referrals = User::where('referral_id', $id);
+    
+        if ($request->has('role_id')) {
+            $referrals->where('role_id', $request->input('role_id'));
+        }
+    
+        $perpage = $request->input('perpage', 10); // Default to 10 if 'perpage' is not provided.
+        $referrals = $referrals->paginate($perpage);
+    
+        return new UserResource($referrals);
+    }
     
 }

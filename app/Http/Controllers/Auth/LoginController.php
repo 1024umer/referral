@@ -56,13 +56,8 @@ class LoginController extends Controller
     }
 
 
-    public function referral(Request $request){
-        $url = $request->fullUrl();
-        $id = null;
-        if (preg_match('/%2F(\d+)$/', $url, $matches)) {
-            $id = $matches[1];
-        }
-        if($id == null || !$id){
+    public function referral(Request $request ,$name,$id){        
+        if(!$id ){
             return redirect()->route('login');
         }
         return view('dashboard.auth.login')->with(compact('id'));

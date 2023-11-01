@@ -26,6 +26,14 @@ class defaultservice{
     get(id){
 		return axios.get(`/api/${this.baseuri}/${id}`).then(e=>e.data.data);
 	}
+	getLists(id){
+		return axios.get(`/api/${this.baseuri}/${id ?? ''}`)
+		.then(function (response) {
+			return response.data;
+		})
+		.catch(function (error) {
+			return error;
+		});	}
     getProductData(brand_id,item_type_id){
 		return axios.get(`/api/${this.baseuri}/${brand_id}/${item_type_id}`)
         .then(function (response) {

@@ -2,7 +2,7 @@
 @section('content')
     <section class="container my-5">
         <div class="my-5">
-            <h3 class="text-white">Welcome to this site please register your self</h3>
+            <h3 class="text-white">Register or Login to your referral portal</h3>
         </div>
         <div class="row">
             <div class="col-md-6">

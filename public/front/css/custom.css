@@ -1089,7 +1089,7 @@ footer {
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 70px 0 0;
+    /* padding: 70px 0 0; */
     position: relative;
 }
 
@@ -1542,7 +1542,7 @@ section.reach-us {
     font-family: 'Clash Display';
 }
 
-footer:after {
+/* footer:after {
     position: absolute;
     content: '';
     background-image: url(../images/contact-ft-bg.png);
@@ -1553,7 +1553,7 @@ footer:after {
     background-position: center;
     background-repeat: no-repeat;
     z-index: 1;
-}
+} */
 
 section.our-blogs {
     margin: -50px 0 0;

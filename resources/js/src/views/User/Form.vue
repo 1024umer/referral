@@ -72,7 +72,7 @@
                         <v-text-field
                             v-model="form.balance"
                             :counter="255"
-                            label="Balance"
+                            label="Commission"
                             required
                             :error-messages="errors.balance"
                         ></v-text-field>
@@ -98,7 +98,9 @@
                     <v-col cols="6">
                         <v-select :error-messages="errors.role_id" item-title="title" item-value="id" label="Role" :items="roles" v-model="form.role_id"></v-select>
                     </v-col>
-
+                    <v-col cols="3">
+                        <v-checkbox v-model="form.is_active" label="Is Active?"></v-checkbox>
+                    </v-col>
                     <v-col cols="12">
                         <v-btn @click="insertRecord" :disabled="loading" :loading="loading" :loading-text="(form.id>0?'Updating':'Inserting')" color="success">{{ form.id>0?'Update':'Insert' }} Record</v-btn>
                     </v-col>
@@ -197,6 +199,7 @@ export default {
                 email: '',
                 password: '',
                 profile_image: [],
+                is_active: true,
                 id: 0,
             },
             loading: false,
@@ -243,6 +246,7 @@ export default {
             formData.append('balance', this.form.balance);
             formData.append('email', this.form.email);
             formData.append('role_id', this.form.role_id);
+            formData.append('is_active', (this.form.is_active==true?1:0));
             if (this.form.id > 0) {
                 formData.append('id', this.form.id);
                 if (this.form.password && this.form.password.length > 0) {
@@ -329,6 +333,7 @@ export default {
                 email: (res.email ? res.email : ''),
                 role_id: (res.role_id ? res.role_id : ''),
                 balance: (res.balance ? res.balance : ''),
+                is_active: (res.is_active == 0 ? false : true),
                 id: this.$route.params.id,
             }
         }else{

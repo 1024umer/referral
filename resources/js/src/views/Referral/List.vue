@@ -11,7 +11,6 @@
             </v-breadcrumbs>
         </v-col>
         <v-col cols="1">
-            <v-btn  color="success" link :to="{ name: 'auth.users.add' }">Add User</v-btn>
         </v-col>
         <v-col cols="12">
             <v-row>
@@ -25,10 +24,9 @@
                 <template v-slot:item.role_id="{ item }">
                     {{ item.selectable.role.title }}
                 </template>
-                <template v-slot:item.actions="{ item }">
-                    <v-btn link :to="{ name: 'auth.users.edit', params: { id: item.selectable.id } }" color="info" density="comfortable" size="small"
-                        icon="mdi-pencil-plus"></v-btn>
-                    <v-btn @click="deleteItem(item.selectable.id)" color="error" density="comfortable" size="small" icon="mdi-delete-outline"></v-btn>
+                <template v-slot:item.full_name="{ item }">
+                    <v-btn link :to="{ name: 'auth.referrals.show', params: { id: item.selectable.id } }"
+                        >{{ item.selectable.full_name }}</v-btn>
                 </template>
             </v-data-table-server>
         </v-col>
@@ -47,15 +45,15 @@ export default {
             breadcrumbs: [
                 {
                     title: 'Dashboard',
-                    to: { name: "auth.panel" },
+                    to: { name: "auth.users.listing" },
                     disabled: false,
                     exact: true,
                 },
                 {
-                    title: 'Users',
+                    title: 'Referral',
                     exact: true,
                     disabled: true,
-                    to: { name: "auth.users.listing" },
+                    to: { name: "auth.referrals.listing" },
                 },
             ],
             serverItems: [],
@@ -71,16 +69,16 @@ export default {
                     key: "id",
                 },
                 {
-                    title: "Email",
-                    align: "start",
-                    sortable: true,
-                    key: "email",
-                },
-                {
                     title: "Name",
                     align: "start",
                     sortable: true,
                     key: "full_name",
+                },
+                {
+                    title: "Email",
+                    align: "start",
+                    sortable: true,
+                    key: "email",
                 },
                 {
                     title: "State",

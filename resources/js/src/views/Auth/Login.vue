@@ -114,7 +114,7 @@ export default {
 						this.$store.commit("setAuthToken", logindetail.data.token);
                         var user = await loginservice.me();
 						this.$store.commit("setloggedInUser", user);
-						this.$router.push({ name: "auth.users.list" });
+						this.$router.push({ name: "auth.users.listing" });
 					} else {
 						this.erorrs.email = logindetail.data;
 						this.snackbar = true;
